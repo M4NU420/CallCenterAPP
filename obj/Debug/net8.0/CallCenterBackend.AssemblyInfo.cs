@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CallCenterBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+215ffb84a65bfa8710fbb2c578bd4636c13b68ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dff5627bc7e393df65413411ed3e745ccaa8783")]
 [assembly: System.Reflection.AssemblyProductAttribute("CallCenterBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CallCenterBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
