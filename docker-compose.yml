@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: callcenter_sql
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Your_strong*Password1
+    ports:
+      - "14333:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+  backend:
+    build: .
+    container_name: callcenter_api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=CallCenterCapacitacion;User ID=sa;Password=Your_strong*Password1;TrustServerCertificate=True;
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sqlserver
+
+volumes:
+  sql_data:
