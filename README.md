@@ -1,9 +1,14 @@
 Para clonar:
+
 git clone https://github.com/M4NU420/CallCenterAPP.git
+
 
 cd CallCenterCapacitacion
 
+
 docker compose up -d --build
+docker compose up -d
+
 
 Swagger → http://localhost:8080/swagger
 
