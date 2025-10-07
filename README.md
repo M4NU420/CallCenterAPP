@@ -3,14 +3,14 @@ Para clonar:
 git clone https://github.com/M4NU420/CallCenterAPP.git
 
 
-cd CallCenterCapacitacion
+cd CallCenterBackend
 
 
 docker compose up -d --build
 docker compose up -d
 
 
-Swagger → http://localhost:8080/swagger
+Swagger → http://localhost:5102/swagger
 
 SQL Server → localhost,14333
 
